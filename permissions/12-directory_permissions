@@ -1,2 +1,2 @@
 #!/bin/bash
-mdkir my_dir 751 permissions
+mdkir my_dir chmod 751 permissions

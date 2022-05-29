@@ -44,5 +44,7 @@ This feature of the command line enables you to redirect the input and/or output
 [22-users_and_homes](https://github.com/tizihoxha/shell/blob/main/io_redirections_and_filters/22-users_and_homes)|`cut -d ':' -f 1,6 /etc/passwd | sort` displays all users and their home directories, sorted by users
 [23-empty_casks](https://github.com/tizihoxha/shell/blob/main/io_redirections_and_filters/23-empty_casks)|`find . -empty | rev | cut -d '/' -f 1 | rev` Write a command that finds all empty files and directories in the current directory and all sub-directories
 [24-gifs](https://github.com/tizihoxha/shell/blob/main/io_redirections_and_filters/24-gifs)|`find . -type f -name "*.gif" | rev | cut -d'/' -f1 | cut -d'.' -f2,3 | rev | sort -Vf` script that lists all the files with a .gif extension in the current directory and all its sub-directories
+
 [25-acrostic](https://github.com/tizihoxha/shell/blob/main/io_redirections_and_filters/25-acrostic)|`cut -c 1 | paste -s -d ''`script that decodes acrostics that use the first letter of each line
+
 [26-the_biggest_fan](https://github.com/tizihoxha/shell/blob/main/io_redirections_and_filters/26-the_biggest_fan)|`tail -n +2 | cut -f -1 | sort -k 1 | uniq -c | sort -rnk 1 | head -n 11 | rev | cut -d ' ' -f -1 | rev` script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.

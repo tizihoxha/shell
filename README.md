@@ -9,5 +9,5 @@ Shell is an environment in which we can run our commands, programs, and shell sc
 
 #### 1. ***[Shell Basics](https://github.com/tizihoxha/shell/tree/main/basics#readme)***
 #### 2. ***[Shell Permissions](https://github.com/tizihoxha/shell/tree/main/permissions#readme)***
-#### 3. ***[Shell, I/O Redirections and filters](https://github.com/tizihoxha/shell/tree/main/io_redirections_and_filters#readme]
-#### 4. ***[Shell, init files, variables and expansions](https://github.com/tizihoxha/shell/tree/main/init_files_variables_and_expansions)***
+#### 3. ***[Shell, I/O Redirections and filters](https://github.com/tizihoxha/shell/tree/main/io_redirections_and_filters#readme)***
+#### 4. ***[Shell, init files, variables and expansions](https://github.com/tizihoxha/shell/tree/main/init_files_variables_and_expansions#readme)***

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Write a Bash script that displays
+for i in *
+
+do
+
+echo "$i" | cut -d '-' -f2
+
+done

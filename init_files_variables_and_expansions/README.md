@@ -46,7 +46,7 @@ Shell init files are classified as below:
 ### Table of commands applied:
 
 **Questions** | **Commands used**
---------- | -----------------------
+:--------- | :-----------------------
 [0-alias](https://github.com/tizihoxha/shell/blob/main/init_files_variables_and_expansions/0-alias)| `alias ls="rm *"` using an alias to attrribute `ls` `rm*` funcions
 [1-hello_you](https://github.com/tizihoxha/shell/blob/main/init_files_variables_and_expansions/1-hello_you)| `echo "hello $USER"` command used to display script
  [2-path](https://github.com/tizihoxha/shell/blob/main/init_files_variables_and_expansions/2-path)| `PATH=$PATH:/action` Adding action to the path

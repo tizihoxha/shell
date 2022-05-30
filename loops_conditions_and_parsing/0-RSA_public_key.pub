@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+for i in Best School
+do
+   echo "{1..10}"
+done

@@ -2,28 +2,23 @@
 # Write a Bash script that gives you information about the school file
 i="school"
 
-if [ -e "$i" ]
-
+if [ -e $i ]
+then 
 	echo "school file exists"
-
-	if [ !-s "$i" ]
-	then
-	       	echo "school file is empty"
-	else 
-
-	echo "school file is not empty"
-
+	if [ ! -s $i ]
+	then 
+		echo "school file is empty"
+	
+        else "school file is not empty"
+	
 	fi
 
-if [ -f "$i" ]
+	if [ -f $i ]
+		echo "school is a regular file"	
+	
+	if [ ! -e $i ]
+	then
 
-then
+    echo      "school file does not exist"
 
-echo "school is a regular file"
-
-fi 
-else
-	echo "school file does not exist"
-fi
-
-
+fi	

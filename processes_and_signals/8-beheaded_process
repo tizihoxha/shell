@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Kill To infinity and beyond
 
-kill -9  "7-highlander"
+pkill -f -9  "7-highlander"

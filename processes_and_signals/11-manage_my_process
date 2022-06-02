@@ -3,22 +3,21 @@
 
 if [ "$1" == "start" ]
 then 
-	./manage_my_process.pid
-	 echo "$!" > /var/run/my_process.pid
 	 echo "manage_my_process started"
+	./manage_my_process.pid & echo "$!" > "/var/run/my_process.pid"
  
 elif [ "$1" == "stop" ]
 then 
-	sudo pkill -f ./manage_my_process
-	rm -rf /var/run/my_process.pid
-	echo "manage_my_process stopped"
+	 echo "manage_my_process stopped" 
+	 sudo pkill -f "./manage_my_process" 
+	 rm "/var/run/my_process.pid"
 
 elif [ "$1" == "restart" ] 
 then 
-	sudo pkill -f ./manage_my_process
-	rm -rf /var/run/my_process.pid 
-	echo "$!" > /var/run/my_process.pid 
 	echo "manage_my_process restarted"
+	sudo pkill -f "./manage_my_process"
+	rm "/var/run/my_process.pid" 
+	./manage_my_process.pid & echo "$!" > "/var/run/my_process.pid" 
 else 
 	echo "Usage: manage_my_process {start|stop|restart}"
 fi

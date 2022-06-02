@@ -1,23 +1,19 @@
 #!/usr/bin/env bash
 #Mananges processes
+case "$1" in
+	start) echo "manage_my_process started"
+		./manage_my_process & echo "$!" > "/var/run/my_process.pid"
+		;;
+	stop)  echo "manage_my_process stopped"
+	        sudo pkill -f "manage_my_process"
+	        rm "/var/run/my_process.pid"
+	        ;;
+	restart) echo "manage_my_process restarted"
+		sudo pkill -f "manage_my_process"
+		rm "/var/run/my_process.pid"
+		 ./manage_my_process & echo "$!" > "/var/run/my_process.pid"
+	        ;;
+	*)   echo "Usage: manage_my_process {start|stop|restart}"
+		;;
 
-if [ "$1" == "start" ]
-then 
-	 echo "manage_my_process started"
-	./manage_my_process.pid & echo "$!" > /var/run/my_process.pid
- 
-elif [ "$1" == "stop" ]
-then 
-	 echo "manage_my_process stopped" 
-	 sudo pkill -f ./manage_my_process 
-	 rm /var/run/my_process.pid
-
-elif [ "$1" == "restart" ] 
-then 
-	echo "manage_my_process restarted"
-	sudo pkill -f ./manage_my_process
-	rm /var/run/my_process.pid 
-	./manage_my_process.pid & echo "$!" > /var/run/my_process.pid 
-else 
-	echo "Usage: manage_my_process {start|stop|restart}"
-fi
+	esac		

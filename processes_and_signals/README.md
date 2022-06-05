@@ -7,12 +7,12 @@
 - [Linux signal](https://www.thegeekstuff.com/2012/03/linux-signals-fundamentals/)
 
 ***Important commands***
-- ps
-- pgrep
-- pkill
-- kill
-- exit
-- trap
+- `ps`
+- `pgrep`
+- `pkill`
+- `kill`
+- `exit`
+- `trap`
 
 
 | Scripts | |
